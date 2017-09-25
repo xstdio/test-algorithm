@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class TestSearch {
 
-	// Returns index of x if it is present in arr[l..r], else
+	// Returns index of x if it is present in sorted arr[l..r], else
 	// return -1
 	public int binary_search(int arr[], int l, int r, int x) {
 		if (r >= l) {
