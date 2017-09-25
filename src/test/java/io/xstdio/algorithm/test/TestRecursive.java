@@ -37,16 +37,16 @@ public class TestRecursive {
 		}
 		return number * factorial_recursive(number - 1);
 	}
-	
+
 	public long reverse_recursive(long number, long reverse) {
-		if(number == 0)
+		if (number == 0)
 			return reverse;
-		reverse = reverse*10 + number%10;
-		
-		return reverse_recursive(number/10, reverse);
+		reverse = reverse * 10 + number % 10;
+
+		return reverse_recursive(number / 10, reverse);
 	}
 
-//	@Ignore
+	// @Ignore
 	@Test
 	public void recursive() {
 		// simple
@@ -56,7 +56,7 @@ public class TestRecursive {
 		// factorial
 		System.out.printf("\n===\nfactorial:%s", factorial_recursive(5));
 		// reverse
-		System.out.printf("\n===\nreverse:13321:%d",reverse_recursive(13321, 0));
+		System.out.printf("\n===\nreverse:13321:%d", reverse_recursive(13321, 0));
 	}
 
 	int min(int x, int y, int z) {
@@ -94,6 +94,7 @@ public class TestRecursive {
 				editDist(str1, str2, m - 1, n - 1) // Replace
 		);
 	}
+
 	@Ignore
 	@Test
 	public void edit_distance() {

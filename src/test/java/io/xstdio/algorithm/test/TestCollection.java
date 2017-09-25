@@ -208,23 +208,21 @@ public class TestCollection {
 			number = number / 10;
 			System.out.printf("|reverse:%d,number:%d", reverse, number);
 		}
-		
-		System.out.printf("[%d]",reverse);
+
+		System.out.printf("[%d]", reverse);
 		return reverse;
 	}
-	
-	
 
 	@Test
 	public void palindrome() {
 		int[] numbers = { 1, 20, 22, 102, 101, 1221, 13321, 13331, 0, 11 };
 		for (int number : numbers) {
-//			System.out.printf("\n [%d]",number);
-//			isPalindrome(number);
-//			System.out.println("\nDoes number : " + number + " is a palindrome? " + isPalindrome(number));
+			// System.out.printf("\n [%d]",number);
+			// isPalindrome(number);
+			// System.out.println("\nDoes number : " + number + " is a
+			// palindrome? " + isPalindrome(number));
 		}
-		
-		
+
 	}
 
 }
